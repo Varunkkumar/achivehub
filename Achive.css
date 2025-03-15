@@ -1,0 +1,63 @@
+:root {
+  --achievehub-primary: #0073b1;
+  --achievehub-secondary: #004871;
+  --achievehub-background: #f3f6f8;
+  --achievehub-card: #ffffff;
+}
+
+.app-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  gap: 20px;
+  max-width: 1128px;
+  margin: 0 auto;
+  padding: 20px 0;
+  background: var(--achievehub-background);
+  min-height: 100vh;
+}
+
+/* Navbar Styles */
+.navbar {
+  background: var(--card-background);
+  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Feed Container */
+.feed-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 60px;
+}
+
+/* Sidebar Styles */
+.network-sidebar {
+  background: var(--achievehub-card);
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .app-container {
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+  
+  .network-sidebar {
+    display: none;
+  }
+}
+
+/* Post Styles */
+.post-card {
+  background: var(--card-background);
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
